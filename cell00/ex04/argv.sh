@@ -1,9 +1,14 @@
+i=0
 if [ $# -gt 0 ]
 then
-	for arg in $@
+	for args in $@
 	do
-		echo "$arg"
-	done
+		if [ $i -lt 3 ]
+		then
+			echo "$args"
+		fi
+	(( i += 1 ))
+        done
 else
 	echo "No arguments supplied"
 fi
