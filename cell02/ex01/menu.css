@@ -1,0 +1,38 @@
+.sncfsandwich   {
+    background-color: teal;
+    width: 300px;
+    height: 100px;
+    color: white;
+    font-size: xx-large;
+    font-family: Arial, Helvetica, sans-serif;
+    border: none;
+}
+
+.dropdown   {
+    position: relative;
+    display: inline-block;
+}
+
+.ingredients    {
+    width: 300px;
+    display: none;
+    position: absolute;
+    background-color: burlywood;
+}
+
+.ingredients a {
+    font-size: xx-large;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    display: block;
+    color: aliceblue;
+}
+
+.dropdown:hover .ingredients    {
+    display: block;
+}
+
+.ingredients a:hover  {
+    background-color: lightsalmon;
+}
