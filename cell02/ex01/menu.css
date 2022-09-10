@@ -1,3 +1,6 @@
+body {
+    text-align: center;
+}
 .sncfsandwich   {
     background-color: teal;
     width: 300px;
@@ -15,13 +18,12 @@
 
 .ingredients    {
     width: 300px;
-    display: none;
-    position: absolute;
+    display: none;    
     background-color: burlywood;
 }
 
 .ingredients a {
-    font-size: xx-large;
+    font-size: x-large;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
     text-decoration: none;
