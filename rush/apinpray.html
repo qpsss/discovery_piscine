@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>apinpray</title>
+    <script src="https://code.jquery.com/jquery-3.6.1.js" 
+    integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" 
+    crossorigin="anonymous"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Josefin+Sans:wght@500&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <style>      
+
+        body {
+            font-family: 'Josefin Sans', sans-serif;
+            transition: .5s;
+        }
+
+        .navbar {
+            font: 5em;
+            margin-bottom: 0;
+        }
+
+        .row{
+          /* gutters = padding l & r in bootstrap */
+          --bs-gutter-x: 0;
+        }
+
+        .first {
+          padding-top: 10%;
+        }
+
+        h1,p {
+            margin-top: 2%;
+        }
+
+        li {
+          font-size: 1.5rem;
+          letter-spacing: 2px;
+        }
+
+        .navbar-brand {
+          font-size: 1.5rem;
+        }
+
+        .card {
+            box-shadow: 0 4px 4px 0 rgba(0,0,0,0.2);
+            border: 0;
+            margin-bottom: 5%;
+        }
+
+        .container-fluid {
+          padding: 0;
+        }
+
+        .card-body {
+          text-align: center;
+        
+        }
+
+        .third {
+          margin-bottom: 8%
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            cursor: pointer; 
+            transition: .5s;
+        }
+        a:hover {
+            text-decoration: none;
+            color: rgb(12, 92, 36);
+            cursor: pointer; 
+            transition: .5s;
+        }
+
+        button:hover {
+          background-color: rgb(68, 95, 74);
+          transition: .5s;
+          color: rgb(120, 196, 141);
+        }
+
+        button {
+          background-color: rgb(120, 196, 141); 
+          transition: .5s;
+        }
+
+
+    </style>
+    <script>
+      function myFunction() {
+        window.alert('Hi~')
+      }
+          $(document).ready(function () {
+            $("body").css("background-color", "rgb(199, 226, 202)");
+                $(window).scroll(function () {
+                  var scroll = $(window).scrollTop();
+                  if (scroll <= 100) {
+                    $("body").css("background-color", "rgb(199, 226, 202)");
+                  }
+                  else if (scroll > 600) {
+                    $("body").css("background-color", "rgb(120, 196, 141)");
+                  } 
+            
+            });
+        });
+
+  </script>
+  </head>
+  <body>
+
+    <div class="container-fluid">
+      <nav class="navbar navbar-expand-lg bg-light fixed-top" id="nav">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html" style="padding-left: 1%;">HUAMARK</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav me-auto mb-0 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="#first" id="about">&nbsp;about me&nbsp;</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#second" id="exp">&nbsp;experiences & skills&nbsp;</a>
+              <li class="nav-item">
+                <a class="nav-link" href="#third" id="contact">&nbsp;contacts&nbsp;</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+<div class="first" id="first">
+  <div class="row justify-content-center align-items-center">
+    <div class="card" style="width: 30rem;">
+      <img src="https://sv1.picz.in.th/images/2022/09/12/aXvZVR.jpg" class="card-img-top" alt="Aratcha Pinprayoon">
+        <div class="card-body">
+          <h1 class="card-title">Aratcha Pinprayoon</h1>
+            <p>I'm a sophomore majoring in computer engineering at KMITL.</p>
+            <button onclick="myFunction()" style="height: 50px; width: 200px; font-size: 1em; border-radius: 20px; border: 0px; text-align: center;">♡ Hello ♡</button>
+        </div>
+    </div>
+</div>
+</div>
+
+<div class="second" id="second">
+    <div class="row justify-content-center align-items-center">
+      <div class="card" style="width: 30rem; margin-top: 10%; margin-right: 2%; margin-left: 2%; margin-top: 28%;">
+        <div class="card-body">
+          <h1>experiences</h1>
+          <p style="text-align: left;margin-left: 20px;">- join lab Network <br> - participated in training session about open system interconnection 
+            model, transmission control program, internet protocol, addressing, and network device</p>
+        </div>
+      </div>
+    <div class="card" style="width: 30rem; padding: 0.5rem; margin-right: 2%; margin-left: 2%; ">
+      <div class="card-body">
+          <h1>skills</h1>
+          <h4 style="text-align: left;margin-left: 20px;">programming language</h4>
+          <p style="text-align: left;margin-left: 20px;">- C
+          <br> - python
+          <br> - Java </p>
+          <h4 style="text-align: left;margin-left: 20px;">professional skills</h4>
+          <p style="text-align: left;margin-left: 20px;">- multitasking
+            <br> - verbal and written communication <br> - problen solving </p>
+      </div>
+    </div>
+</div>
+
+<div class="third" id="third">
+  
+  <div class="row justify-content-center align-items-center">
+      <div class="card" style="width: 30rem; margin-top: 10%;">
+        <div class="card-body">
+          <a href="https://github.com/aratchamm">
+            <i class="fa fa-github" style="font-size:48px;"></i>
+            <h1>github</h1>
+            <br><br>
+          </a>
+          <a href="https://www.instagram.com/mxxkmxw/">
+            <i class="fa fa-instagram" style="font-size:48px;"></i>
+            <h1>instagram</h1><br><br>
+          </a>
+          <a href="mailto:aratcha.mm@gmail.com">
+            <i class="fa fa-envelope" style="font-size:48px;"></i>
+              <h1>gmail</h1>
+          </a>
+        </div>
+      </div>
+    </div>
+
+</div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+  </body>
+</html>
